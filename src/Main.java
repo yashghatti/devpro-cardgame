@@ -24,12 +24,12 @@ public class Main {
         }
 
         System.out.println("-----------------");
-        List<Round> p1Wins = roundHistory.stream().filter(round ->
-                round.getOutcome()== Round.Outcome.WIN && round.getWinningPlayer().equals(player1)
+        List<Round> p1Wins = roundHistory.stream().filter(
+                round -> round.getOutcome()== Round.Outcome.WIN && round.getWinningPlayer().equals(player1)
         ).collect(Collectors.toList());
 
-        List<Round> p2Wins = roundHistory.stream().filter(round ->
-                round.getOutcome()== Round.Outcome.WIN && round.getWinningPlayer().equals(player2)
+        List<Round> p2Wins = roundHistory.stream().filter(
+                round -> round.getOutcome()== Round.Outcome.WIN && round.getWinningPlayer().equals(player2)
         ).collect(Collectors.toList());
         if(p1Wins.size() > p2Wins.size()){
             System.out.println("Player 1 has won the game : ["+p1Wins.size()+" - "+p2Wins.size()+"]");

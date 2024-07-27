@@ -58,7 +58,7 @@ public class Round {
     public String toString() {
         return "Round{" +
                 "outcome=" + outcome +
-                ", winningPlayer=" + winningPlayer +
+                (outcome==Outcome.WIN ? ", winningPlayer=" + winningPlayer : "")+
                 '}';
     }
 }
