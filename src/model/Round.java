@@ -61,10 +61,4 @@ public class Round {
                 ", winningPlayer=" + winningPlayer +
                 '}';
     }
-
-    public static void main(String[] args) {
-        Deck deck1 = new Deck();
-        Player player1 = new Player("p1");
-        Player player2 = new Player("p2");
-    }
 }
